@@ -1,0 +1,42 @@
+{
+  "name": "vpex-auth-starter",
+  "version": "1.0.0",
+  "description": "Vue, Parcel, Express starter with Firebase Authentication",
+  "scripts": {
+    "client:dev": "parcel index.html",
+    "server:dev": "nodemon ./server/app.js --watch ./server",
+    "dev": "concurrently --kill-others 'npm run client:dev' 'npm run server:dev' || true",
+    "client:prod": "parcel build index.html",
+    "server:prod": "node ./server/app.js",
+    "build": "concurrently 'npm run client:prod' 'npm run server:prod'",
+    "serve": "npm run server:prod",
+    "prebuild": "rm -rf dist"
+  },
+  "author": "lsbyerley@gmail.com",
+  "license": "ISC",
+  "browserslist": "> 0.25%, not dead",
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "axios": "^0.18.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "firebase": "^5.11.0",
+    "mustard-ui": "0.0.8",
+    "nodemon": "^1.19.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@vue/component-compiler-utils": "^3.0.0",
+    "concurrently": "^4.1.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.19.0",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
