@@ -11,3 +11,6 @@ cp .env.example .env
 npm install
 npm run dev
 ```
+
+## Firebase Setup
+If you do not have a Firebase Account, you will need to [create one here](https://console.firebase.google.com/). Once your account is setup and you have enabled the Email/Password signin method, you will need to add the Firebase config variables to the `.env` file
