@@ -4,17 +4,19 @@
     <main>
       <router-view/>
     </main>
-    <footer></footer>
+    <FootBar><FootBar/>
   </div>
 </template>
 
 <script>
 import NavBar from '~/src/components/NavBar'
+import FootBar from '~/src/components/FootBar'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    FootBar
   }
 };
 </script>

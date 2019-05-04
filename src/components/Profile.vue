@@ -15,6 +15,7 @@
             <p class="panel-title">Update Profile</p>
           </div>
           <div class="panel-body">
+            <p>Your Email: {{ currentUser.email }}</p>
             <form @submit.prevent class="update-profile-form">
               <div class="form-control">
                 <label for="name">Name</label>
@@ -49,7 +50,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['userProfile']),
+    ...mapState(['userProfile','currentUser']),
     updateDisabled() {
       let nameValid = (this.name !== '' && this.name !== this.userProfile.name)
       let usernameValid = (this.username !== '' && this.username !== this.userProfile.username)
@@ -77,6 +78,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 </style>

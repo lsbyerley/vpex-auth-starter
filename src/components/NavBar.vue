@@ -37,7 +37,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .nav {
   box-shadow: 0 2px 10px rgba(0,0,0,.43);
 }
