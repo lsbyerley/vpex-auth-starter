@@ -2,7 +2,7 @@
   <nav class="nav">
     <div class="nav-container">
       <div class="nav-logo">
-        <router-link to="dashboard">VPEX</router-link>
+        <router-link to="dashboard">VPEX Auth</router-link>
       </div>
       <ul class="nav-links" v-if="currentUser">
         <li><router-link active-class="active" to="profile">Profile</router-link></li>

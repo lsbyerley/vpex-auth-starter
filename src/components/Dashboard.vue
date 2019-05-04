@@ -4,6 +4,7 @@
       <div class="container container-small align-center">
         <h1>Dashboard</h1>
         <h2>Hello, {{ userProfile.username }}</h2>
+        <p>ApiTest: {{ apiTest }}</p>
       </div>
     </section>
   </div>

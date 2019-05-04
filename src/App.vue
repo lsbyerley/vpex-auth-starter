@@ -10,15 +10,11 @@
 
 <script>
 import NavBar from '~/src/components/NavBar'
-import { mapState } from 'vuex'
 
 export default {
   name: 'App',
   components: {
     NavBar
-  },
-  computed: {
-    ...mapState(['currentUser'])
   }
 };
 </script>
